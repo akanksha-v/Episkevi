@@ -1,0 +1,174 @@
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <title>
+        animation
+    </title>
+    <style>
+        body{background-color: grey;;}
+         /* body {
+            background-image:linear-gradient(grey,black );
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size:cover;
+            position: relative;
+        }  */
+
+   
+
+        div{ border-radius: 14px;
+        border-width: 4px;
+        border-color: cadetblue;
+               width: 150px;
+               position: absolute;
+            height: 120px;
+            background-repeat: no-repeat;
+            background-color: yellow;
+            padding: auto;
+             text-align: center;
+            font-size: 70px;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: rgb(228, 113, 113);
+
+            animation-name:anime;
+            animation-duration: 3.5s;
+            animation-iteration-count: 1;
+            animation-delay: 0s;
+            animation-direction: normal;
+           }
+
+
+
+            #block{
+                top: 50px;
+               left: 35px; 
+                 }
+
+
+
+            #block1{
+                top: 50px;
+               left: 280px;  
+               /* background-image: url('W.jpeg');  */
+           
+            }
+            
+            #block2{
+                top: 50px;
+               left: 550px; 
+              
+            }
+
+
+            #block5{
+                top: 50px;
+               left: 1090px; 
+              
+            }
+            
+            #block3{
+                top: 50px;
+               left: 820px;  
+               
+            }
+
+            hr.line{
+                position: absolute;
+                top: 70%;
+                border-width: 2px;
+                border-color: rgb(172, 55, 55);
+                width: 100%;
+                z-index: 1;
+                
+                
+            }
+
+
+            @keyframes anime{
+          0% {color: rgb(156, 169, 182);}
+          100% {color:black;}
+
+            }
+
+             video{
+                width:"100%";
+                 height:"100%" ;
+                  z-index:-10; 
+            }  
+
+
+            
+            #block4{position:absolute;
+                color:white;
+                top: 1000px;
+               left: 500px;
+               height:95px;
+               width:500px;
+      font-family: algerian;
+      border-color:brown;
+      
+      font-weight: bold;
+               background-image:linear-gradient(pink,maroon );
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size:cover;
+               
+            }
+            
+            
+            
+
+
+     
+    </style>
+
+
+</head>
+
+<body>
+      <!-- <video name="media" id="media" autoplay>
+        <source src="./video.mp4" type="video/mp4">
+        not working
+ 
+      </video>   -->
+      
+<!-- <video width="320" height="240" autoplay>
+    <source src="video.mp4" type="video/mp4">
+    <source src="movie.ogg" type="video/ogg">
+    Your browser does not support the video tag.
+  </video> -->
+      
+  <button onclick=" myVideo.play()">START GAME</button>
+   
+  
+    <video id="video1" width="100%" height="100%">
+      <source src="video.mp4" type="video/mp4">
+     
+     
+    </video>
+ 
+  
+  <script> 
+    var myVideo = document.getElementById("video1"); 
+    // <input type="text" onkeypress=" myVideo.play()">
+    
+ function play() { 
+   
+     myVideo.play(); 
+    
+   } 
+  
+
+  </script> 
+
+    <script src="./animation.js"></script>
+
+</body>
+<script>
+    var media = document.getElementById("media")
+$("media").on("load",() => {
+    $("media").play()
+})
+</script>
+</html>
